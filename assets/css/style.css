@@ -1,124 +1,230 @@
 html,
-body{
+body {
 	height: 100%;
-	color:#fff;	
+	color: #fff;
 	font-family: 'Noto Serif JP', serif;
+	font-size: 20px;
 }
 
-body{
+@media screen and (max-width: 900px) {
+
+	html,
+	body {
+		font-size: 18px;
+	}
+}
+
+body {
 	background-color: #333;
 }
 
-header{
+.sp_br {
+	display: none;
+}
+
+@media screen and (max-width: 700px) {
+	.sp_br {
+		display: block;
+	}
+}
+
+
+header {
 	width: 100%;
 	background-color: transparent;
 	position: fixed;
 	z-index: 999;
 }
-.header_listitem{
+
+.header_listitem {
 	padding: 0 15px;
 }
-a.tiktok_txt{
+
+a.tiktok_txt {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 120%;
 	color: #fff;
 	text-decoration: none;
 }
-a.youtube_txt{
+
+@media screen and (max-width: 700px) {
+	a.tiktok_txt {
+		font-size: 90%;
+	}
+}
+
+a.youtube_txt {
 	font-family: 'League Gothic', sans-serif;
 	font-size: 150%;
 	color: #fff;
 	text-decoration: none;
 }
-ul{
-	list-style:none;
-	display:flex;
-	justify-content:flex-end;
-	align-items: center;
-}
-.icon_youtube{
-	width: 32px;
- 	height: 32px;
- 	display: block;
-	background-image: url('../images/icon_youtube.png');
-	background-size: contain;
- 	background-repeat: no-repeat;
-}
-.icon_twitter{
-	width: 40px;
- 	height: 32px;
-	/*元サイズの25%の幅の余白必要*/
- 	display: block;
-	background-image: url('../images/icon_twitter.png');
-	background-size: contain;
- 	background-repeat: no-repeat;
-}
-.icon_instagram{
-	width: 32px;
- 	height: 32px;
-	/*元サイズの50%の幅の余白必要*/
- 	display: block;
-	background-image: url('../images/icon_instagram.png');
-	background-size: contain;
- 	background-repeat: no-repeat;
-}
-.icon_note{
-	width: 90px;
- 	height: 32px;
- 	display: block;
-	background-image: url('../images/icon_note.png');
-	background-size: contain;
- 	background-repeat: no-repeat;
+
+@media screen and (max-width: 700px) {
+	a.youtube_txt {
+		font-size: 93%;
+	}
 }
 
-h2{
+ul {
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-inline-start: 0px;
+}
+
+@media screen and (max-width: 700px) {
+	ul {
+		justify-content: center;
+	}
+}
+
+.icon_youtube {
+	width: 32px;
+	height: 32px;
+	display: block;
+	background-image: url('../images/icon_youtube.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 700px) {
+	.icon_youtube {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.icon_twitter {
+	width: 40px;
+	height: 32px;
+	/*元サイズの25%の幅の余白必要*/
+	display: block;
+	background-image: url('../images/icon_twitter.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 700px) {
+	.icon_twitter {
+		width: 25px;
+		height: 20px;
+		/*元サイズの25%の幅の余白必要*/
+	}
+}
+
+.icon_instagram {
+	width: 32px;
+	height: 32px;
+	/*元サイズの50%の幅の余白必要*/
+	display: block;
+	background-image: url('../images/icon_instagram.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 700px) {
+	.icon_instagram {
+		width: 20px;
+		height: 20px;
+		/*元サイズの50%の幅の余白必要*/
+	}
+}
+
+.icon_note {
+	width: 90px;
+	height: 32px;
+	display: block;
+	background-image: url('../images/icon_note.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 700px) {
+	.icon_note {
+		width: 56px;
+		height: 20px;
+	}
+}
+
+h2 {
 	font-family: 'Oswald', sans-serif;
 	font-size: 200%;
 	margin-bottom: 50px;
 }
 
-.fixed_bg_title{
+.fixed_bg_title {
 	background-color: rgba(23, 23, 23, 0.8);
 	background-image: url('../images/index_bg.jpg');
 	/*https://www.photo-ac.com/main/detail/2764464&title=PA%E5%8D%93%E3%83%BB%E3%83%9F%E3%82%AD%E3%82%B5%E3%83%BC*/
 	background-attachment: fixed;
 	background-size: cover;
-	background-position:left;
+	background-position: left;
 	font-size: 300%;
 }
-.sub_title{
+
+@media screen and (max-width: 900px) {
+	.fixed_bg_title {
+		font-size: 250%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.fixed_bg_title {
+		font-size: 200%;
+	}
+}
+
+.sub_title {
 	font-size: 50%;
 }
 
-.fixed_bg_music{
+.fixed_bg_music {
 	background-color: rgba(23, 23, 23, 0.8);
 	background-image: url('../images/music_bg.jpg');
 	/*https://www.pakutaso.com/20220106012post-38326.html*/
 	background-attachment: fixed;
 	background-size: cover;
-	background-position:center;
+	background-position: center;
 }
 
-.section{
+.section {
 	padding: 120px 40px 140px;
 	text-align: center;
 }
 
-.section_title{
-	padding: 60px 40px 70px;
+@media screen and (max-width: 700px) {
+	.section {
+		padding: 60px 20px 70px;
+	}
+}
+
+
+.section_title {
+	padding: 70px 40px 70px;
 	text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+	.section_title {
+		padding: 70px 20px 35px;
+		text-align: center;
+	}
 }
 
 .twitter_timeline {
 	max-width: 600px;
 	padding: 10px;
 	margin: 0 auto;
-  }
-
-footer{
-	background-color: #333;
 }
-.footer_copyright{
-	text-align:center;
-	font-size: 11px;
+
+footer {
+	background-color: #333;
+	padding: 10px;
+}
+
+.footer_copyright {
+	text-align: center;
+	font-size: 13px;
 }
