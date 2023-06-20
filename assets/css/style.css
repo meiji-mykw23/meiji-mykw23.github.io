@@ -40,7 +40,7 @@ ul{
 	width: 32px;
  	height: 32px;
  	display: block;
-	background-image: url('../img/icon_youtube.png');
+	background-image: url('../images/icon_youtube.png');
 	background-size: contain;
  	background-repeat: no-repeat;
 }
@@ -49,7 +49,7 @@ ul{
  	height: 32px;
 	/*元サイズの25%の幅の余白必要*/
  	display: block;
-	background-image: url('../img/icon_twitter.png');
+	background-image: url('../images/icon_twitter.png');
 	background-size: contain;
  	background-repeat: no-repeat;
 }
@@ -58,7 +58,7 @@ ul{
  	height: 32px;
 	/*元サイズの50%の幅の余白必要*/
  	display: block;
-	background-image: url('../img/icon_instagram.png');
+	background-image: url('../images/icon_instagram.png');
 	background-size: contain;
  	background-repeat: no-repeat;
 }
@@ -66,7 +66,7 @@ ul{
 	width: 90px;
  	height: 32px;
  	display: block;
-	background-image: url('../img/icon_note.png');
+	background-image: url('../images/icon_note.png');
 	background-size: contain;
  	background-repeat: no-repeat;
 }
@@ -79,7 +79,7 @@ h2{
 
 .fixed_bg_title{
 	background-color: rgba(23, 23, 23, 0.8);
-	background-image: url('../img/index_bg.jpg');
+	background-image: url('../images/index_bg.jpg');
 	/*https://www.photo-ac.com/main/detail/2764464&title=PA%E5%8D%93%E3%83%BB%E3%83%9F%E3%82%AD%E3%82%B5%E3%83%BC*/
 	background-attachment: fixed;
 	background-size: cover;
@@ -92,7 +92,7 @@ h2{
 
 .fixed_bg_music{
 	background-color: rgba(23, 23, 23, 0.8);
-	background-image: url('../img/music_bg.jpg');
+	background-image: url('../images/music_bg.jpg');
 	/*https://www.pakutaso.com/20220106012post-38326.html*/
 	background-attachment: fixed;
 	background-size: cover;
