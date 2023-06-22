@@ -169,15 +169,14 @@ h2 {
 .fixed_bg_title::after,
 .fixed_bg_music::after {
 	content: "";
-	position: absolute;
 	display: block;
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100vh;
 	background-position: center;
 	background-repeat: no-repeat;
-	-webkit-background-size: contain;
 	background-size: cover;
 }
 
