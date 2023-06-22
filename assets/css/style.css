@@ -1,114 +1,253 @@
-<!DOCTYPE html>
-<html lang="ja">
+html,
+body {
+	height: 100%;
+	color: #fff;
+	font-family: 'Noto Serif JP', serif;
+	font-size: 20px;
+}
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
-	<title>明治大学情コミ 宮川ゼミ</title>
-	<meta name="description" content="明治大学情コミ 宮川ゼミJ-pop班によるページ。成果物をアップしています。">
-	<meta name="keywords" content="明治大学,宮川ゼミ,情コミ">
+@media screen and (max-width: 900px) {
 
-	<link rel="shortcut icon" href="assets/images/favicon.ico">
-	<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
-	<link rel="icon" type="image/png" href="assets/images/android-chrome-256x256.png">
+	html,
+	body {
+		font-size: 18px;
+	}
+}
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Oswald:wght@600&display=swap"
-		rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+body {
+	background-color: #333;
+}
 
-	<link rel="stylesheet" href="assets/css/reset.css">
-	<link rel="stylesheet" href="assets/css/style.css">
+.sp_br {
+	display: none;
+}
 
-</head>
+@media screen and (max-width: 700px) {
+	.sp_br {
+		display: block;
+	}
+}
 
-<body>
-	<!----- ヘッダー ----->
-	<header>
-		<div class="header_pc_inner">
-			<ul class="header_list">
-				<li class="header_listitem">
-					<a class="youtube_txt" href="https://www.youtube.com/channel/UCt9tekdym_R-kgmysrGCuFQ" target="_blank">
-						YouTube
-					</a>
-				</li>
-				<li class="header_listitem">
-					<a href="https://twitter.com/meiji_mykw23" target="_blank">
-						<i class="icon_twitter"></i>
-					</a>
-				</li>
-				<li class="header_listitem">
-					<a href="https://www.instagram.com/meiji_mykw23_jpop" target="_blank">
-						<i class="icon_instagram"></i>
-					</a>
-				</li>
-				<li class="header_listitem">
-					<a class="tiktok_txt" href="https://www.tiktok.com/@meiji_mykw23_jpop" target="_blank">
-						TikTok
-					</a>
-				</li>
-				<li class="header_listitem">
-					<a href="https://note.com/meiji_mykw23" target="_blank">
-						<i class="icon_note"></i>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</header>
-	<!----- ヘッダー END ----->
 
-	<div class="fixed_bg_title"></div>
-	<section>
-		<div class="section_title">
-			<p class="sub_title">明治大学情報コミュニケーション学部</p>
-			<p>宮川ゼミ <br class="sp_br">J-pop研究グループ</p>
-		</div>
-	</section>
-	
-	<div class="fixed_bg_music"></div>
-	
-	<section>
-		<div class="section">
-			<h2>ABOUT</h2>
-			<p>
-				明治大学情報コミュニケーション学部<br class="sp_br">宮川ゼミのゼミ生作成のページ。
-				<br>
-				ゼミの活動を通して制作した成果物を<br class="sp_br">紹介、アップロードします。
-			</p>
-		</div>
-	</section>
+header {
+	width: 100%;
+	background-color: transparent;
+	position: fixed;
+	z-index: 999;
+}
 
-	<section>
-		<div class="section_bg">
-			<h2>MUSIC</h2>
-			<p>
-				鋭意制作中...!
-			</p>
-		</div>
-	</section>
+.header_listitem {
+	padding: 0 15px;
+}
 
-	<section>
-		<div class="section">
-			<h2>TWITTER</h2>
+a.tiktok_txt {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 120%;
+	color: #fff;
+	text-decoration: none;
+}
 
-			<div class="twitter_timeline">
-				<a class="twitter-timeline" data-width="100%" data-height="600" data-theme="dark"
-					href="https://twitter.com/meiji_mykw23?ref_src=twsrc%5Etfw">Tweets by meiji_mykw23</a>
-				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-			</div>
-		</div>
-	</section>
+@media screen and (max-width: 700px) {
+	a.tiktok_txt {
+		font-size: 90%;
+	}
+}
 
-	<!----- フッター ----->
-	<footer>
-		<p class="footer_copyright">
-			&copy;明治大学情報コミュニケーション学部 <br class="sp_br">宮川ゼミ J-pop研究グループ
-		</p>
-	</footer>
-	<!----- フッター END ----->
-</body>
+a.youtube_txt {
+	font-family: 'Oswald', sans-serif;
+	font-size: 150%;
+	color: #fff;
+	text-decoration: none;
+}
 
-</html>
+@media screen and (max-width: 700px) {
+	a.youtube_txt {
+		font-size: 93%;
+	}
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-inline-start: 0px;
+}
+
+@media screen and (max-width: 700px) {
+	ul {
+		justify-content: center;
+	}
+}
+
+.icon_youtube {
+	width: 32px;
+	height: 32px;
+	display: block;
+	background-image: url('../images/icon_youtube.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 700px) {
+	.icon_youtube {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.icon_twitter {
+	width: 40px;
+	height: 32px;
+	/*元サイズの25%の幅の余白必要*/
+	display: block;
+	background-image: url('../images/icon_twitter.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 700px) {
+	.icon_twitter {
+		width: 25px;
+		height: 20px;
+		/*元サイズの25%の幅の余白必要*/
+	}
+}
+
+.icon_instagram {
+	width: 32px;
+	height: 32px;
+	/*元サイズの50%の幅の余白必要*/
+	display: block;
+	background-image: url('../images/icon_instagram.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 700px) {
+	.icon_instagram {
+		width: 20px;
+		height: 20px;
+		/*元サイズの50%の幅の余白必要*/
+	}
+}
+
+.icon_note {
+	width: 90px;
+	height: 32px;
+	display: block;
+	background-image: url('../images/icon_note.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 700px) {
+	.icon_note {
+		width: 56px;
+		height: 20px;
+	}
+}
+
+h2 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 200%;
+	margin-bottom: 50px;
+}
+
+
+.fixed_bg_title,
+.fixed_bg_music {
+	display: block;
+	position: sticky;
+	top: 0;
+	z-index: -1;
+	height: 0;
+	max-height: 0;
+	overflow: visible;
+}
+
+.fixed_bg_title::after,
+.fixed_bg_music::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.fixed_bg_title::after {
+	background-position: left;
+	background-image: url('../images/index_bg.jpg');
+	/*https://www.photo-ac.com/main/detail/2764464&title=PA%E5%8D%93%E3%83%BB%E3%83%9F%E3%82%AD%E3%82%B5%E3%83%BC*/
+	}
+.fixed_bg_music::after {
+	background-image: url('../images/music_bg.jpg');
+	/*https://www.pakutaso.com/20220106012post-38326.html*/
+}
+
+
+.sub_title {
+	font-size: 50%;
+}
+
+
+.section {
+	padding: 120px 40px 140px;
+	text-align: center;
+	background-color: #333;
+}
+
+@media screen and (max-width: 700px) {
+	.section {
+		padding: 60px 20px 70px;
+	}
+}
+.section_bg{
+	padding: 120px 40px 140px;
+	text-align: center;
+}
+@media screen and (max-width: 700px) {
+	.section_bg {
+		padding: 60px 20px 70px;
+	}
+}
+
+.section_title {
+	padding: 70px 40px 70px;
+	font-size: 300%;
+	text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+	.section_title {
+		font-size: 250%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.section_title {
+		font-size: 200%;
+		padding: 70px 20px 35px;
+		text-align: center;
+	}
+}
+
+.twitter_timeline {
+	max-width: 600px;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+footer {
+	background-color: #333;
+	padding: 10px;
+}
+
+.footer_copyright {
+	text-align: center;
+	font-size: 13px;
+}
