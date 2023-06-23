@@ -53,18 +53,6 @@ a.tiktok_txt {
 	}
 }
 
-a.youtube_txt {
-	font-family: 'Oswald', sans-serif;
-	font-size: 150%;
-	color: #fff;
-	text-decoration: none;
-}
-
-@media screen and (max-width: 700px) {
-	a.youtube_txt {
-		font-size: 93%;
-	}
-}
 
 ul {
 	list-style: none;
@@ -91,7 +79,7 @@ ul {
 
 @media screen and (max-width: 700px) {
 	.icon_youtube {
-		width: 20px;
+		width: 30px;
 		height: 20px;
 	}
 }
