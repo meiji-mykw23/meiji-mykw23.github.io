@@ -81,8 +81,8 @@ ul {
 }
 
 .icon_youtube {
-	width: 32px;
-	height: 32px;
+	width: 40px;
+	height: 30px;
 	display: block;
 	background-image: url('../images/icon_youtube.png');
 	background-size: contain;
